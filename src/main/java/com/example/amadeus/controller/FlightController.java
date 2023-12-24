@@ -3,12 +3,14 @@ package com.example.amadeus.controller;
 import com.example.amadeus.entity.Flight;
 import com.example.amadeus.exception.FlightNotFoundException;
 import com.example.amadeus.service.FlightService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/flights")
 @RequiredArgsConstructor
+@Tag(name = "Flight", description = "Flight CRUD APIs")
 public class FlightController {
 
     private final FlightService flightService;

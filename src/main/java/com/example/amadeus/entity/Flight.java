@@ -7,8 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Entity
 @Getter
 @Setter
@@ -21,11 +19,11 @@ public class Flight {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "departure_airport_id", referencedColumnName="city")
+    @JoinColumn(name = "departure_airport_id", referencedColumnName = "city")
     private Airport departureAirport;
 
     @ManyToOne
-    @JoinColumn(name = "arrival_airport_id", referencedColumnName="city")
+    @JoinColumn(name = "arrival_airport_id", referencedColumnName = "city")
     private Airport arrivalAirport;
 
     @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)

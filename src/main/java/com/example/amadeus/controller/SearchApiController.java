@@ -2,9 +2,9 @@ package com.example.amadeus.controller;
 
 import com.example.amadeus.entity.Flight;
 import com.example.amadeus.service.FlightService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/flights")
 @RequiredArgsConstructor
+@Tag(name = "Search", description = "Search APIs")
 public class SearchApiController {
 
     private final FlightService flightService;
@@ -37,10 +38,6 @@ public class SearchApiController {
 
         if (flights.isEmpty()) {
             return ResponseEntity.notFound().build();
-        }
-
-        if (returnDate != null && flights.size() < 2) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Insufficient data for two-way flight");
         }
 
         return ResponseEntity.ok(flights);
