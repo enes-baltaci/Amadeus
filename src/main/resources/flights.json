@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "departureAirport": {
+      "id": 1,
+      "city": "İstanbul"
+    },
+    "arrivalAirport": {
+      "id": 2,
+      "city": "Ankara"
+    },
+    "departureDateTime": "2023-12-24",
+    "returnDateTime": "2023-12-31",
+    "price": 549.99
+  },
+  {
+    "id": 2,
+    "departureAirport": {
+      "id": 3,
+      "city": "İzmir"
+    },
+    "arrivalAirport": {
+      "id": 1,
+      "city": "İstanbul"
+    },
+    "departureDateTime": "2023-12-25",
+    "returnDateTime": "2024-01-05",
+    "price": 795.00
+  },
+  {
+    "id": 3,
+    "departureAirport": {
+      "id": 4,
+      "city": "Antalya"
+    },
+    "arrivalAirport": {
+      "id": 5,
+      "city": "Bodrum"
+    },
+    "departureDateTime": "2023-12-26",
+    "price": 399.00
+  },
+  {
+    "id": 4,
+    "departureAirport": {
+      "id": 1,
+      "city": "İstanbul"
+    },
+    "arrivalAirport": {
+      "id": 6,
+      "city": "Paris"
+    },
+    "departureDateTime": "2023-12-27",
+    "returnDateTime": "2023-12-30",
+    "price": 1299.99
+  },
+  {
+    "id": 5,
+    "departureAirport": {
+      "id": 7,
+      "city": "Berlin"
+    },
+    "arrivalAirport": {
+      "id": 8,
+      "city": "Amsterdam"
+    },
+    "departureDateTime": "2023-12-28",
+    "price": 249.99
+  },
+  {
+    "id": 6,
+    "departureAirport": {
+      "id": 9,
+      "city": "Roma"
+    },
+    "arrivalAirport": {
+      "id": 10,
+      "city": "Barcelona"
+    },
+    "departureDateTime": "2023-12-29",
+    "returnDateTime": "2024-01-02",
+    "price": 499.99
+  },
+  {
+    "id": 7,
+    "departureAirport": {
+      "id": 1,
+      "city": "İstanbul"
+    },
+    "arrivalAirport": {
+      "id": 11,
+      "city": "Dubai"
+    },
+    "departureDateTime": "2023-12-30",
+    "returnDateTime": "2024-01-04",
+    "price": 899.99
+  },
+  {
+    "id": 8,
+    "departureAirport": {
+      "id": 2,
+      "city": "Ankara"
+    },
+    "arrivalAirport": {
+      "id": 1,
+      "city": "İstanbul"
+    },
+    "departureDateTime": "2023-12-31",
+    "returnDateTime": "2024-01-03",
+    "price": 500
+  }
+]
+
