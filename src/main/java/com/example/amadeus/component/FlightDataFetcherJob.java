@@ -23,7 +23,7 @@ public class FlightDataFetcherJob {
     private final FlightService flightService;
     private final AirportService airportService;
 
-    @Scheduled(initialDelay = 1000, fixedRate = 999999999) // Run every day at midnight
+    @Scheduled(initialDelay = 1000, fixedRate = 999999999) // Initial run to fill database
     @Transactional
     public void loadFlightsFromJson() {
         filler();
